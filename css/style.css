@@ -250,3 +250,79 @@ footer {
         gap: 1.5rem;
     }
 }
+
+/* Botão Dark Mode */
+#dark-mode-btn {
+    background: rgba(255, 255, 255, 0.2); /* Fundo sutil para destaque */
+    border: none;
+    font-size: 1rem; /* Tamanho clean */
+    cursor: pointer;
+    color: #fff; /* Branco no header */
+    padding: 0.5rem 1rem;
+    border-radius: 20px; /* Arredondado para minimalismo */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#dark-mode-btn:hover {
+    background: rgba(255, 255, 255, 0.4); /* Hover mais claro */
+    color: #ffd700; /* Amarelo dourado para destaque */
+}
+
+/* Regras para Dark Mode (iguais ao anterior) */
+body.dark-mode {
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+body.dark-mode header {
+    background: linear-gradient(135deg, #121212, #1f1f1f); /* Gradiente escuro */
+}
+
+body.dark-mode section {
+    background-color: #2a2a2a; /* Cards escuros */
+}
+
+body.dark-mode section h2 {
+    color: #fff; /* Títulos brancos */
+}
+
+body.dark-mode section h2::after {
+    background: #60a5fa; /* Acento azul claro */
+}
+
+body.dark-mode #skills li {
+    background: #3b82f6; /* Skills em azul escuro */
+    color: #fff;
+}
+
+body.dark-mode #skills li:hover {
+    background: #2563eb;
+}
+
+body.dark-mode article {
+    border-left-color: #60a5fa; /* Acento ajustado */
+}
+
+body.dark-mode article h3 {
+    color: #60a5fa;
+}
+
+body.dark-mode footer {
+    background: #121212;
+    color: #e0e0e0;
+    border-top: 1px solid #333;
+}
+
+/* Ajustes para ícones de contactos no dark mode */
+body.dark-mode .contacto-item img {
+    filter: brightness(1.2) drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1)); /* Mais visíveis */
+}
+
+body.dark-mode .contacto-item span {
+    color: #d1d5db;
+}
+
+/* Transições suaves para mudança de modo */
+body, header, section, footer, #skills li, article {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
