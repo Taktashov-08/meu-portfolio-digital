@@ -326,3 +326,29 @@ body.dark-mode .contacto-item span {
 body, header, section, footer, #skills li, article {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+#projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    display: block;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
